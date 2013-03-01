@@ -4,7 +4,7 @@
 set -e
 
 # get updates
-if [ "$(git fetch)" == "" ]
+if [ "$(git pull)" == "Already up-to-date." ]
 then
  echo "Update not needed"
  exit 0
